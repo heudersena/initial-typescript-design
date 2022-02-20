@@ -1,11 +1,5 @@
-import 'dotenv/config';
-import express, { Request, Response } from 'express';
-const app = express();
-
-app.get('/', (request: Request, response: Response) => {
-  response.json({});
-});
-
-app.listen(process.env.PORT, () => {
-  console.log(`server on port 3000`);
-});
+import { serverHttp } from './http';
+import './websocket';
+serverHttp.listen(process.env.PORT, () =>
+  console.log('server on running port: ' + process.env.PORT),
+);
