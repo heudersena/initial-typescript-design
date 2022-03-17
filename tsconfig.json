@@ -15,7 +15,7 @@
     "sourceMap": false,
     "removeComments": true,
     "preserveConstEnums": true,
-    "typeRoots": ["node_modules/@types", "./src/@types"]
+    "typeRoots": ["./src/@types","node_modules/@types"]
   },
   "include": ["src/**/*"],
   "resolveJsonModule": true,
